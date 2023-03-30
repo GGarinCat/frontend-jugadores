@@ -28,7 +28,7 @@ const Cards = () => {
         ) : (
           players.map((player) => {
             return (
-              <div key={player._id} className="card" style={{ width: "18rem" }}>
+              <div key={player._id} className="card text-center align-items-center" style={{ width: "18rem" }}>
                 <img
                   src={player.playerImgProfile}
                   className="card-img-top"
@@ -41,7 +41,7 @@ const Cards = () => {
                 />
                 <div className="card-body">
                   <h5 className="card-title">{player.playerName}</h5>
-                  <p className="card-text">{player.position}</p>
+                  <p className="card-text">{player.playerPosition}</p>
                   <a href="/" className="btn btn-primary">
                     Go somewhere
                   </a>
